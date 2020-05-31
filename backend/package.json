@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && node lib/index.js",
+    "start": "tsc && node lib/index.js",
+    "deploy": "npm run build && gcloud app deploy"
+  },
+  "main": "lib/index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.14.1",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.3"
+  }
+}
